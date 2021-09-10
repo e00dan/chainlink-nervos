@@ -7,7 +7,7 @@ Existing aggregators / feeds:
 - ETH / USD
 - DAI / ETH
 
-Feed Registry address on testnet: `0x1363bdCE312532F864e84924D54c7dA5eDB5B1BC`
+Feed Registry address on Nervos Layer 2 testnet: `0x1363bdCE312532F864e84924D54c7dA5eDB5B1BC`
 
 Documentation: https://docs.chain.link/docs/feed-registry/
 
