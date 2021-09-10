@@ -37,7 +37,12 @@ yarn build:types && yarn build:ts
 
 Before usage you need to provide correct values for:
 ```
+const USER_ONE_PRIVATE_KEY = 'YOUR_PRIVATE_KEY';
+const ETH_MAINNET_RPC = 'YOUR_ETH_MAINNET_RPC_EG_INFURA';
+const COINAPI_KEY = 'YOUR_COINAPI_KEY'; // https://www.coinapi.io/
 ```
+
+in DeployOracles.ts
 
 ```
 yarn start
