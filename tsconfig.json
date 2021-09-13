@@ -1,8 +1,19 @@
 {
-    "extends": "./tsconfig.build.json",
     "compilerOptions": {
-        "types": ["mocha"],
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
         "target": "esnext",
-        "experimentalDecorators": true
-    }
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "lib": ["es2018", "ES2020", "dom"],
+        "preserveSymlinks": true,
+        "rootDir": "./",
+        "outDir": "./dist/js"
+    },
+    "include": ["./src/**/*", "./typechain/**/*", "./artifacts/**/*.json"],
+    "files": ["./hardhat.config.ts"]
 }

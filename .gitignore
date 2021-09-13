@@ -6,3 +6,6 @@ build
 src/types
 yarn-error.log
 .env
+cache
+artifacts
+typechain
