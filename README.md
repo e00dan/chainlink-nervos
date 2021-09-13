@@ -1,6 +1,6 @@
 # Chainlink Oracles on Nervos Layer 2
 
-This project is a simple implementation of some of the Chainlink contracts on Nervos.
+This project is a simple implementation of some of the Chainlink contracts on Nervos. This repository is using Ether.js + Hardhat + Typechain + TypeScript.
 
 Existing aggregators / feeds:
 - CKB / USD

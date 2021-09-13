@@ -9,10 +9,10 @@ import {
     MockV3Aggregator,
     MockV3Aggregator__factory
 } from '../typechain';
-import { COINAPI_KEY, ETH_MAINNET_RPC, USER_ONE_PRIVATE_KEY } from './config';
+import { COINAPI_KEY, ETH_MAINNET_RPC, NERVOS_PROVIDER_URL, USER_ONE_PRIVATE_KEY } from './config';
 
 const nervosProviderConfig = {
-    web3Url: 'http://localhost:8024'
+    web3Url: NERVOS_PROVIDER_URL
 };
 
 enum DENOMINATIONS {

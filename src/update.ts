@@ -8,11 +8,12 @@ import {
     COINAPI_KEY,
     ETH_MAINNET_RPC,
     EXISTING_FEED_REGISTRY_CONTRACT_ADDRESS,
+    NERVOS_PROVIDER_URL,
     USER_ONE_PRIVATE_KEY
 } from './config';
 
 const nervosProviderConfig = {
-    web3Url: 'http://localhost:8024'
+    web3Url: NERVOS_PROVIDER_URL
 };
 
 enum DENOMINATIONS {
@@ -36,7 +37,7 @@ const ethMainnetProvider = new providers.WebSocketProvider(ETH_MAINNET_RPC);
 const aggregators = [
     {
         description: 'ETH / USD',
-        address: '0xeF899a0B536E56f4A73F6B48Dd96E5b18707cfE2',
+        address: '0xC0d16A34629597717dc038642739aBE3d2cD210A',
         base: DENOMINATIONS.ETH,
         quote: DENOMINATIONS.USD,
         getLatestData: async () => {
@@ -52,7 +53,7 @@ const aggregators = [
     },
     {
         description: 'DAI / ETH',
-        address: '0x74e3FA6fcBDf5C82A52998A8982d22edF1A5CB3c',
+        address: '0x5D3f43de8Ae0b703c68A2d9A88efDA1ce37eD229',
         base: DENOMINATIONS.DAI,
         quote: DENOMINATIONS.ETH,
         getLatestData: async () => {
@@ -71,7 +72,7 @@ const aggregators = [
     },
     {
         description: 'CKB / USD',
-        address: '0x9DC3A7f1DF9ebaC7966CD5f3Fe0EBba42233cd02',
+        address: '0x0B3187A38d37704A7c775825A247E666D686a8A7',
         base: DENOMINATIONS.CKB,
         quote: DENOMINATIONS.USD,
         getLatestData: async () => {
